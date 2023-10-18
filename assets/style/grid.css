@@ -68,3 +68,40 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto 1fr;
 }
+
+@media(min-width: 1440px) {
+    .categorias {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "lista destaque"
+            "lista imagem";
+}
+.categorias__titulo {
+    grid-area: titulo;
+}
+
+.categorias__lista {
+    grid-area: lista;
+ }
+
+.categorias__destaques {
+    grid-area: destaque;
+}
+
+.categorias__imagem {
+    grid-area: imagem;
+}
+}
+
+@media(min-width: 1440px) {
+    .categorias {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "lista destaque"
+            "lista imagem";
+row-gap: 1rem;
+        column-gap: 1.5rem;
+}
+}
